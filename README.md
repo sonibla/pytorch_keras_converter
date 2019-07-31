@@ -125,13 +125,12 @@ architecture
 - **quiet** (bool):
 If *False*, display a progress bar and some messages
 - **ignore_tests** (bool):
-If tests should be ignored. 
+If tests should be ignored. If weights is False, tests are automatically ignored.
   - If set to *False*, converted model will
 still be tested by security. If models are not identical, it will
 only print a warning.
   - If set to *True*, and models are not identical, *RuntimeWarning* will
 be raised
-If weights is False, tests are automatically ignored
 - **input_range**:
 Optional.
 A list of 2 elements containing max and min values to give as
@@ -184,13 +183,12 @@ architecture
 - **quiet** (bool):
 If *False*, display a progress bar and some messages
 - **ignore_tests** (bool):
-If tests should be ignored. 
+If tests should be ignored. If weights is False, tests are automatically ignored.
   - If set to *False*, converted model will
 still be tested by security. If models are not identical, it will
 only print a warning.
   - If set to *True*, and models are not identical, *RuntimeWarning* will
 be raised
-If weights is False, tests are automatically ignored
 - **input_range**:
 Optional.
 A list of 2 elements containing max and min values to give as
