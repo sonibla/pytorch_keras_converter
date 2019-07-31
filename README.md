@@ -6,12 +6,12 @@ Also converts some simple PyTorch models. See [supported layers](https://github.
 
 ## Installation
 
-These instructions will get you a copy of the project up and running on 
-your local machine.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
 [Python](https://www.python.org/downloads/) : supported versions : >=3.5
+
 You can also install python with [Anaconda](https://www.anaconda.com/distribution/#download-section).
 
 ### Installing
@@ -20,27 +20,34 @@ This command should install automatically `pytorch_keras_converter` and every de
 ```
 python3 setup.py install --user
 ```
+
 To install on a particular version of Python (here 3.7):
 ```
 python3.7 setup.py install --user
 ```
+
 To install on the entire system (requires administrator privileges):
 ```
 sudo python setup.py install
 ```
 
 ### Troubleshooting
+
 #### Installing `pip` or `setuptools`
+
 If modules `pip` or `setuptools` aren't installed on your Python environment:
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 ```
+
 #### Manually installing dependencies
+
 Dependencies should install automatically when running `setup.py`. But if it fails, install them manually:
 ```
 python -m pip install torch pretrainedmodels tensorflow graphviz numpy h5py tqdm --user
 ```
+
 Remove `--user` to install on the whole system, replace `python` with `python3.7` to install on Python 3.7.
 
 ## Usage
@@ -48,21 +55,18 @@ Remove `--user` to install on the whole system, replace `python` with `python3.7
 ### Quick examples
 
 - To convert `se_resnet50`:
-
 ```
 >>> import pytorch_keras_converter as pkc
 >>> pkc.cadene_to_tf(['se_resnet50'], quiet=False)
 ```
 
 - To convert `bninception` and `fbresnet152`:
-
 ```
 >>> import pytorch_keras_converter as pkc
 >>> pkc.cadene_to_tf(['bninception', 'fbresnet152'])
 ```
 
 - To convert `se_resnet152` with random weights:
-
 ```
 >>> import pytorch_keras_converter as pkc
 >>> pkc.cadene_to_tf(['se_resnet152(pretrained=None)'])
@@ -71,14 +75,15 @@ Remove `--user` to install on the whole system, replace `python` with `python3.7
 - To automatically convert many models:
 
 Create a file containing on each line one model's name. For example:
-
 ```
 resnet18
 resnet34
 resnet50(pretrained=None)
 resnet50
 ```
+
 Let's store this file in `models.txt`.
+
 Now, in a Python shell:
 ```
 >>> import pytorch_keras_converter as pkc
@@ -88,6 +93,7 @@ Now, in a Python shell:
 ### API documentation
 
 #### `pytorch_keras_converter.API.convert`
+
 ```
 def convert(model,
             input_shape,
@@ -99,7 +105,9 @@ def convert(model,
             filename=None,
             directory=None):
 ```
+
 ##### Arguments:
+
 - model:
 A Keras or PyTorch model or layer to convert
 - input_shape (list, tuple or int):
@@ -131,15 +139,20 @@ save is not *False*, then save will automatically be set to *True*
 Optional.
 Where to save model's hdf5 file. If directory is not *None* and
 save is not *False*, then save will automatically be set to *True*
+
 ##### Raises:
+
 - *RuntimeWarning*:
 If converted and original model aren't identical, and ignore_tests
 is False
+
 ##### Returns:
+
 If model has been exported to a file, it will return the name of the file.
 Else, it returns the converted model.
 
 #### `pytorch_keras_converter.API.convert_and_save`
+
 ```
 def convert_and_save(model,
                      input_shape,
@@ -150,6 +163,7 @@ def convert_and_save(model,
                      filename=None,
                      directory=None):
 ```
+
 ##### Arguments:
 
 - model:
@@ -181,16 +195,21 @@ save is not *False*, then save will automatically be set to *True*
 Optional.
 Where to save model's hdf5 file. If directory is not *None* and
 save is not *False*, then save will automatically be set to *True*
+
 ##### Returns:
+
 Name of created hdf5 file
 
 #### `pytorch_keras_converter.cadene_to_tf`
+
 ```
 def cadene_to_tf(modelList=None, 
                  outputDirectory=None, 
                  quiet=True):
 ```
+
 ##### Arguments:
+
 - modelList:
 A *tuple* or *list* of names of the models to convert
 OR
@@ -203,11 +222,16 @@ parenthesis after model's name, for example:
 Optionnal. Where hdf5 files should be saved
 - quiet (bool):
 If *False*, display a progress bar
+
 ##### Raises:
+
 - *TypeError*:
 If modelList wasn't a *str*, *list*, or *tuple*
+
 ##### Returns:
+
 A list of created files
+
 ## Supported models and layers
 
 ### Supported [Cadene](https://github.com/Cadene)'s models
@@ -227,6 +251,7 @@ A list of created files
 ### Other models
 
 Some simple PyTorch models are supported. Supported layers are:
+
 - torch.nn.AvgPool2d(count_include_pad=True)
 - torch.nn.MaxPool2d(dilation=1)
 - torch.nn.Batchnorm2d
@@ -244,32 +269,37 @@ To convert a custom PyTorch model, use `pytorch_keras_converter.API`.
 ## Known issues
 
 ### Fails to import `pretrainedmodels`
+
 If `pretrainedmodels` module isn't available, you can still convert models manually.
 
  1. Download `pretrainedmodels` from [GitHub](https://github.com/cadene/pretrained-models.pytorch)
 ```
 git clone https://github.com/Cadene/pretrained-models.pytorch.git
 ```
+
  2. Open a Python shell 
 ```
 cd pretrained-models.pytorch
 python
 ```
+
 3. Create a model
 ```
 >>> model = pretrainedmodels.se_resnet50()
 >>> input_shape = pretrainedmodels.pretrained_settings['se_resnet50']['input_size']
 ```
+
 4. Convert your model
 ```
 >>> import pytorch_keras_converter as pkc
 >>> pkc.API.convert_and_save(model, input_shape)
 ```
+
 ### Can't run the tests
 
 If you use `pytorch_keras_converter.API` or `pytorch_keras_converter.cadene_to_tf` it will only show a warning : `Warinig: tests unavailable!`.
-If you manually test models using 
-`pytorch_keras_converter.tests` it will raise the exception `InvalidArgumentError`.
+
+If you manually test models using `pytorch_keras_converter.tests` it will raise the exception `InvalidArgumentError`.
 
 This is because some TensorFlow layers only support NHWC (i.e channels last) on CPU.
 
@@ -280,7 +310,9 @@ Using Anaconda solves this issue.
 * [**Alban Benmouffek**](https://github.com/sonibla)
 
 ## Code of conduct
+
 This repository is fully [PEP8](https://www.python.org/dev/peps/pep-0008/) compliant.
+
 ## License
 
 This project is licensed under the [MIT License](https://tldrlegal.com/license/mit-license) - see the [LICENSE](https://github.com/sonibla/pytorch_keras_converter/blob/master/LICENSE) file for details
@@ -289,4 +321,3 @@ This project is licensed under the [MIT License](https://tldrlegal.com/license/m
 
 * [**Rémi Cadene**](https://github.com/Cadene)
 * [**David Picard**](https://github.com/davidpicard)
-
