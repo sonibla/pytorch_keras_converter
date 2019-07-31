@@ -305,7 +305,7 @@ python
 
 ### Can't run the tests
 
-If you use `pytorch_keras_converter.API` or `pytorch_keras_converter.cadene_to_tf` it will only show a warning : `Warinig: tests unavailable!`.
+If you use `pytorch_keras_converter.API` or `pytorch_keras_converter.cadene_to_tf` it will only show a warning : `Warning: tests unavailable!`.
 
 If you manually test models using `pytorch_keras_converter.tests` it will raise the exception `InvalidArgumentError`.
 
