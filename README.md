@@ -321,3 +321,4 @@ This project is licensed under the [MIT License](https://tldrlegal.com/license/m
 
 * [**Rémi Cadene**](https://github.com/Cadene)
 * [**David Picard**](https://github.com/davidpicard)
+* [**Pierre Jacob**](https://github.com/pierre-jacob)
