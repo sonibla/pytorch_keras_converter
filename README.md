@@ -19,6 +19,7 @@ You can also install python with [Anaconda](https://www.anaconda.com/distributio
 Download files:
 ```
 git clone https://github.com/sonibla/pytorch_keras_converter.git
+cd pytorch_keras_converter
 ```
 Then install `pytorch_keras_converter` using `setup.py`
 
