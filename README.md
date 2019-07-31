@@ -131,6 +131,7 @@ still be tested by security. If models are not identical, it will
 only print a warning.
   - If set to *True*, and models are not identical, *RuntimeWarning* will
 be raised
+If weights is False, tests are automatically ignored
 - **input_range**:
 Optional.
 A list of 2 elements containing max and min values to give as
@@ -189,6 +190,7 @@ still be tested by security. If models are not identical, it will
 only print a warning.
   - If set to *True*, and models are not identical, *RuntimeWarning* will
 be raised
+If weights is False, tests are automatically ignored
 - **input_range**:
 Optional.
 A list of 2 elements containing max and min values to give as
