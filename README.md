@@ -23,7 +23,7 @@ cd pytorch_keras_converter
 ```
 Then install `pytorch_keras_converter` using `setup.py`
 
-This command should install automatically `pytorch_keras_converter` and every dependency:
+The following command should install automatically `pytorch_keras_converter` and every dependency:
 ```
 python3 setup.py install --user
 ```
