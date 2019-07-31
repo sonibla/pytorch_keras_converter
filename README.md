@@ -313,6 +313,10 @@ Using Anaconda solves this issue.
 
 This repository is fully [PEP8](https://www.python.org/dev/peps/pep-0008/) compliant.
 
+When reporting issues, please specify your OS, your version of Python, versions of every dependency and if you're using a particular environment (Anaconda for example).
+
+You can use `pip freeze` to see versions of your Python modules.
+
 ## License
 
 This project is licensed under the [MIT License](https://tldrlegal.com/license/mit-license) - see the [LICENSE](https://github.com/sonibla/pytorch_keras_converter/blob/master/LICENSE) file for details
