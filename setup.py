@@ -18,7 +18,7 @@ setuptools.setup(
     description="A PyTorch Keras Converter",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sonibla/pytorch-keras-converter",
+    url="https://github.com/sonibla/pytorch_keras_converter",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3.5",
