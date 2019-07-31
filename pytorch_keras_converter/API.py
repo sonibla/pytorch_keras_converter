@@ -39,6 +39,7 @@ def convert(model,
 
             If set to True, and models are not identical, RuntimeWarning will
             be raised
+            If weights is False, tests are automatically ignored
         -input_range:
             Optionnal.
             A list of 2 elements containing max and min values to give as
@@ -69,6 +70,9 @@ def convert(model,
         save = True
     if save is None:
         save = False
+
+    if weights == False:
+        ignore_tests = True
 
     if not quiet:
         print('\nConversion...')
@@ -170,6 +174,7 @@ def convert_and_save(model,
 
             If set to True, and models are not identical, RuntimeWarning will
             be raised
+            If weights is False, tests are automatically ignored
         -input_range:
             Optionnal.
             A list of 2 elements containing max and min values to give as
