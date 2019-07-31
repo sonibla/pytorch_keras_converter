@@ -2,7 +2,7 @@
 
 A PyTorch-Keras converter made for [Cadene](https://github.com/Cadene)'s [pretrained models](https://github.com/cadene/pretrained-models.pytorch).
 
-Also converts some simple PyTorch models. See [supported layers](https://github.com/sonibla/pytorch_keras_converter#supported-models-and-layers) for more details.
+Also converts some simple PyTorch models. See [supported layers](https://github.com/sonibla/pytorch_keras_converter#other-models) for more details.
 
 ## Installation
 
