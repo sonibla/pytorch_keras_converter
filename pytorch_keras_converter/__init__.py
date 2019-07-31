@@ -3,13 +3,13 @@ Conversion Utility
 Convert and analyse Keras and pyTorch models
 
 Dependencies:
-dependencies = ['torch',
-                'pretrainedmodels',
-                'tensorflow',
-                'graphviz',
-                'numpy',
-                'h5py',
-                'tqdm']
+    -torch
+    -pretrainedmodels
+    -tensorflow
+    -graphviz
+    -numpy
+    -h5py
+    -tqdm
 
 
 Features:
@@ -72,7 +72,7 @@ Features:
         OK, only if original model was a simple pyTorch model. See
         utility/core.py for details.
 
-    -Saing an entire model after pyTorch to Keras conversion :
+    -Saving an entire model after pyTorch to Keras conversion :
         OK. See API.py for details.
 
     -Comparing 2 models (Keras, pyTorch) on random data :
