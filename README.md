@@ -234,7 +234,7 @@ A list of created files
 
 ## Supported models and layers
 
-### Supported [Cadene](https://github.com/Cadene)'s models
+### Supported [Cadene's models](https://github.com/cadene/pretrained-models.pytorch)
 
 - [SE-ResNet50](https://github.com/Cadene/pretrained-models.pytorch#senet)
 - [SE-ResNet101](https://github.com/Cadene/pretrained-models.pytorch#senet)
