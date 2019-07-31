@@ -285,6 +285,7 @@ python
 
 3. Create a model
 ```
+>>> import pretrainedmodels
 >>> model = pretrainedmodels.se_resnet50()
 >>> input_shape = pretrainedmodels.pretrained_settings['se_resnet50']['input_size']
 ```
