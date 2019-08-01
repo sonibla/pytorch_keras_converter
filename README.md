@@ -178,17 +178,14 @@ A Keras or PyTorch model or layer to convert
 - **input_shape** (list, tuple or int):
 Input shape, without batchsize.
 - **weights** (bool):
-Also convert weights. If set to *False*, only convert model
-architecture
+Also convert weights. If set to *False*, only convert model architecture
 - **quiet** (bool):
-If *False*, display a progress bar and some messages
+If *False*, display a progress bar and some messages.
 - **ignore_tests** (bool):
 If tests should be ignored. If weights is False, tests are automatically ignored.
-  - If set to *False*, converted model will
-still be tested by security. If models are not identical, it will
-only print a warning.
-  - If set to *True*, and models are not identical, *RuntimeWarning* will
-be raised
+  - If set to *False*, converted model will still be tested by security. 
+If models are not identical, it will only print a warning.
+  - If set to *True*, and models are not identical, *RuntimeWarning* will be raised
 - **input_range**:
 Optional.
 A list of 2 elements containing max and min values to give as
@@ -196,12 +193,10 @@ input to the model when performing the tests. If *None,* models will
 be tested on samples from the "standard normal" distribution.
 - **filename**:
 Optional.
-Filename to give to model's hdf5 file. If filename is not *None* and
-save is not *False*, then save will automatically be set to *True*
+Filename to give to model's hdf5 file. If filename is not *None* and save is not *False*, then save will automatically be set to *True*
 - **directory**:
 Optional.
-Where to save model's hdf5 file. If directory is not *None* and
-save is not *False*, then save will automatically be set to *True*
+Where to save model's hdf5 file. If directory is not *None* and save is not *False*, then save will automatically be set to *True*
 
 ##### Returns:
 
@@ -221,7 +216,7 @@ def cadene_to_tf(modelList=None,
 A *tuple* or *list* of names of the models to convert
 OR
 A *str* telling the emplacement of a file containing names
-of models to convert (one model per line)
+of models to convert (one model per line).
 If you want a particular config for each model, put it between
 parenthesis after model's name, for example:
 'se_resnet50(pretrained=None)'
