@@ -73,7 +73,6 @@ def convert_torch2keras(model, input_size, weights=True, quiet=True):
             the model to convert (LayerRepresentation)
         -input_size:
             int, list, or tuple.
-            Optionnal if the model is very simple
         -weights (bool):
             If weights should be converted too (may take a lot of time !)
         -quiet (bool):
