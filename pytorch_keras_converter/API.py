@@ -33,11 +33,11 @@ def convert(model,
         -quiet (bool):
             If a progress bar and some messages should appear
         -ignore_tests (bool):
-            If tests should be ignored. If set to False, converted model will
+            If tests should be ignored. 
+            If set to True, converted model will
             still be tested by security. If models are not identical, it will
             only print a warning.
-
-            If set to True, and models are not identical, RuntimeWarning will
+            If set to False, and models are not identical, RuntimeWarning will
             be raised
             If weights is False, tests are automatically ignored
         -input_range:
@@ -168,12 +168,19 @@ def convert_and_save(model,
         -quiet (bool):
             If a progress bar and some messages should appear
         -ignore_tests (bool):
-            If tests should be ignored. If set to False, converted model will
+
+            If tests should be ignored. 
+
+            If set to True, converted model will
+
             still be tested by security. If models are not identical, it will
+
             only print a warning.
 
-            If set to True, and models are not identical, RuntimeWarning will
+            If set to False, and models are not identical, RuntimeWarning will
+
             be raised
+
             If weights is False, tests are automatically ignored
         -input_range:
             Optionnal.
