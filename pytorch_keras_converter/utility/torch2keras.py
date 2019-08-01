@@ -333,8 +333,8 @@ def advancedKerasEquivalence(model,
 
 def updateProgress(model, progressBar):
     """
-    During a conversion, updates the progress bar
-    Value is aucomatically computes using numberOfEquivalents
+    During a conversion, updates the progress bar.
+    Value is aucomatically computed using numberOfEquivalents
 
     Arguments:
         -model:
