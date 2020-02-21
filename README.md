@@ -322,7 +322,7 @@ You can use `pip freeze` to see versions of your Python modules.
 
 ## License
 
-This project is licensed under the [MIT License](https://tldrlegal.com/license/mit-license) - see the [LICENSE](https://github.com/sonibla/pytorch_keras_converter/blob/master/LICENSE) file for details
+This project is licensed under the [MIT License](https://tldrlegal.com/license/mit-license) - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
