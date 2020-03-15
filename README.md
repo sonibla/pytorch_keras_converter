@@ -4,6 +4,22 @@ A PyTorch-Keras converter made for [Cadene](https://github.com/Cadene)'s [pretra
 
 Also converts some simple PyTorch models. See [supported layers](https://github.com/sonibla/pytorch_keras_converter#other-models) for more details.
 
+## Table of contents
+
+- [Installation](#installation)
+  * [Prerequisites](#prerequisites)
+  * [Installing](#installing)
+  * [Troubleshooting](#troubleshooting)
+- [Usage](#usage)
+  * [Quick examples](#quick-examples)
+  * [API documentation](#api-documentation)
+- [Supported models and layers](#supported-models-and-layers)
+- [Known issues](#known-issues)
+- [Authors](#authors)
+- [Code of conduct](#code-of-conduct)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Installation
 
 These instructions will get you a copy of the project up and running on your local machine.
