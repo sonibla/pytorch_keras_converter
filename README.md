@@ -1,5 +1,8 @@
 # pytorch_keras_converter
 
+![GitHub stars](https://img.shields.io/github/stars/sonibla/pytorch_keras_converter)
+![license](https://img.shields.io/github/license/sonibla/pytorch_keras_converter)
+
 A PyTorch-Keras converter made for [Cadene](https://github.com/Cadene)'s [pretrained models](https://github.com/cadene/pretrained-models.pytorch).
 
 Also converts some simple PyTorch models. See [supported layers](https://github.com/sonibla/pytorch_keras_converter#other-models) for more details.
