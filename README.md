@@ -7,6 +7,8 @@ A PyTorch-Keras converter made for [Cadene](https://github.com/Cadene)'s [pretra
 
 Also converts some simple PyTorch models. See [supported layers](https://github.com/sonibla/pytorch_keras_converter#other-models) for more details.
 
+I don't have a lot if time for this project, feel free to [contribute](#contributing) if you want to :)
+
 ## Table of contents
 
 - [Installation](#installation)
@@ -18,8 +20,8 @@ Also converts some simple PyTorch models. See [supported layers](https://github.
   * [API documentation](#api-documentation)
 - [Supported models and layers](#supported-models-and-layers)
 - [Known issues](#known-issues)
+- [Contributing](#contributing)
 - [Authors](#authors)
-- [Code of conduct](#code-of-conduct)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -327,17 +329,24 @@ This is because some TensorFlow layers only support NHWC (i.e channels last) on 
 
 Using Anaconda solves this issue.
 
+## Contributing
+
+Contributions are always welcome !
+
+Feel free to create an issue if you found a bug or if you have an idea of improvement.
+If you want to solve an issue or implement a new feature by yourself, you can fork the repository and make a pull request
+
+This repository is fully [PEP8](https://www.python.org/dev/peps/pep-0008/) compliant.
+
+When reporting bugs, please specify your OS, your version of Python, versions of every dependency and if you're using a particular environment (Anaconda for example).
+
+You can use `pip freeze` to see versions of your Python modules
+
 ## Authors
 
 * [**Alban Benmouffek**](https://github.com/sonibla)
 
-## Code of conduct
-
-This repository is fully [PEP8](https://www.python.org/dev/peps/pep-0008/) compliant.
-
-When reporting issues, please specify your OS, your version of Python, versions of every dependency and if you're using a particular environment (Anaconda for example).
-
-You can use `pip freeze` to see versions of your Python modules.
+See also the list of [contributors](https://github.com/sonibla/pytorch_keras_converter/contributors) who participated in this project.
 
 ## License
 
