@@ -344,7 +344,7 @@ You can use `pip freeze` to see versions of your Python modules
 
 ## Authors
 
-* [**Alban Benmouffek**](https://github.com/sonibla)
+* [**sonibla**](https://github.com/sonibla)
 
 See also the list of [contributors](https://github.com/sonibla/pytorch_keras_converter/contributors) who participated in this project.
 

@@ -14,7 +14,7 @@ dependencies = ['torch',
 setuptools.setup(
     name="pytorch_keras_converter",
     version="0.0.1",
-    author="Alban Benmouffek",
+    author="sonibla",
     description="A PyTorch Keras Converter",
     long_description=long_description,
     long_description_content_type="text/markdown",
